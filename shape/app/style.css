@@ -1,0 +1,40 @@
+svg {
+
+     
+	background : #ffffa2;
+}
+
+.building {
+
+	stroke : #234;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : none;
+	z-index : 2;
+	cursor : default;
+} 
+
+.amenity {
+	stroke : #501;
+	stroke-width : 2.5px;
+	stroke-linecap : square;
+	fill : #501;
+	z-index : 2;
+}
+
+.natural {
+	stroke : #8C4;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : #8C4;
+	z-index : 0;
+}
+
+.highway {
+
+	stroke : red;
+	stroke-width : 2.5px;
+	stroke-linecap : square;
+	fill : #9A9;
+	z-index : 1;
+}

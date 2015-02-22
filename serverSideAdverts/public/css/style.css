@@ -1,0 +1,140 @@
+#menu a {  
+    display:block;  
+    color: #fff;  
+    text-decoration:none;  
+}  
+#menu > li,  
+#menu > li li {  
+    position: relative;  
+    display:inline-block;  
+    width: 110px;  
+    padding: 6px 15px;  
+    background-color: #777;  
+    background-image: linear-gradient(#aaa, #888 50%, #777 50%,#999);  
+}  
+#menu > li li { background: transparent none; }  
+#menu > li li a { color: #444; }  
+#menu > li li:hover { background:#eee; }  
+#menu > li:first-child {  
+    border-right: 1px solid #777;  
+    border-radius: 8px 0 0 8px;  
+}  
+#menu > li + li {  
+    border-left: 1px solid #aaa;  
+    border-right: 1px solid #777;  
+}  
+#menu > li:last-child {  
+    border-right:0;  
+    border-left: 1px solid #aaa;  
+    border-radius: 0 8px 8px 0 ;  
+}  
+#menu > li:hover {  
+    background-color: #999;  
+    background-image: linear-gradient(#ccc, #aaa 50%, #999 50%,#bbb);  
+}  
+#menu ul {  
+    position: absolute;  
+    top: 2em; left:0;  
+    max-height:0em;  
+    margin:0; padding:0;  
+    background-color:#ddd;  
+    background-image: linear-gradient(#fff,#ddd);  
+    overflow:hidden;  
+    transition: 1s max-height 0.3s;  
+    border-radius: 0 0 8px 8px;  
+}    
+#menu > li:hover ul {  
+    max-height:13em;  
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 50;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+
+.building {
+	stroke : blue;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : #FAEEF3;
+	z-index : 2;
+	cursor : default;
+
+}
+
+
+.natural {
+	stroke : #0C7912;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : #93F699;
+	z-index : 0;
+
+}
+
+.highway {
+
+	stroke : #BDC5BE;
+	stroke-width : 2.5px;
+	stroke-linecap : circle;
+	fill : #FFFFFF;
+	z-index : 1;
+}
+
+.amenity {
+	stroke : #ACB2AC;
+	stroke-width : 2.5px;
+	stroke-linecap : square;
+	fill : #929892;
+	z-index : 2;
+}
+
+
+/***FIRST STYLE THE BUTTON***/
+input#gobutton{
+cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+padding:5px 25px; /*add some padding to the inside of the button*/
+background:#35b128; /*the colour of the button*/
+border:1px solid #33842a; /*required or the default border for the browser will appear*/
+/*give the button curved corners, alter the size as required*/
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+/*give the button a drop shadow*/
+-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+box-shadow: 0 0 4px rgba(0,0,0, .75);
+/*style the text*/
+color:#f3f3f3;
+font-size:1.1em;
+}
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+input#gobutton:hover, input#gobutton:focus{
+background-color :#399630; /*make the background a little darker*/
+/*reduce the drop shadow size to give a pushed button effect*/
+-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+box-shadow: 0 0 1px rgba(0,0,0, .75);
+}

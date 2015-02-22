@@ -1,0 +1,314 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>IDOD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Justified Nav Template for Bootstrap</title>
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="justified-nav.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+<style>
+
+
+body {
+  padding-top: 20px;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 0px;
+  border-top: 1px solid #eee;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+
+.nav-justified {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+  background-color: #e5e5e5; /* Old browsers */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e5e5e5));
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+  background-image:      -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(top), color-stop(0%, #f5f5f5), to(#e5e5e5));
+  background-image:         linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  border-bottom: 1px solid #d5d5d5;
+}
+.nav-justified > .active > a,
+.nav-justified > .active > a:hover,
+.nav-justified > .active > a:focus {
+  background-color: #ddd;
+  background-image: none;
+  -webkit-box-shadow: inset 0 5px 9px rgba(0,0,0,.15);
+          box-shadow: inset 0 5px 9px rgba(0,0,0,.15);
+}
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #fff;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
+
+
+svg {
+
+	background : #eeeeff;
+}
+
+.building {
+
+	stroke : #234;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : none;
+	z-index : 2;
+	cursor : default;
+}
+
+.amenity {
+	stroke : #501;
+	stroke-width : 2.5px;
+	stroke-linecap : square;
+	fill : #501;
+	z-index : 2;
+}
+
+.natural {
+	stroke : #8C4;
+	stroke-width : 0.5px;
+	stroke-linecap : square;
+	fill : #8C4;
+	z-index : 0;
+}
+
+.highway {
+
+	stroke : #9A9;
+	stroke-width : 2.5px;
+	stroke-linecap : square;
+	fill : #9A9;
+	z-index : 1;
+}
+
+
+
+
+</style>
+  </head>
+  <body>
+    
+   
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="text-muted">Project name</h3>
+        <br>
+        <ul class="nav nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div> 
+<br>
+<br>
+<center><p id="map2"></p></center>
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/shape.js"></script>
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    
+
+	<script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+
+
+//;
+//function drawCity() {
+
+	var screen_width = 785, screen_height = 515;
+        
+	var svg = d3.select('#map2')
+			.append("svg")
+			.attr("width", screen_width)
+			.attr("height", screen_height);
+                    
+	var page_1 = "/building op=Show";
+        
+	$.getJSON('data/eure.json', function(attributes) {
+
+		var buildings, totalArea, naturals, amenities, roads, attributes;
+                
+		buildings = _.where(attributes, {'building':true})
+				.map(shape.createBuilding);
+	
+		console.log(buildings);
+		var a = svg.selectAll('.shape')
+			.data(buildings)
+			.enter()
+			.append("svg:a")
+			.classed("item", 1)
+			/*.attr("xlink:href", function(d, i) {
+					return page_1 + " Id =" + d.getId();
+				})*/;
+
+		a.append("svg:path")
+			.classed("building", 1)
+			.attr("id", function(d, i) {
+						return d.getId();
+					})
+			.attr("d", function(d, i) {
+				return d.toSVGPath();
+			   });
+
+		a.append("svg:text")
+		 .append("svg:textPath")
+		/*.attr("xlink:href", function(d, i) {
+				return "#" + d.getId();
+				})*/
+		 .classed("bulle", 1)
+		 .text(function(d, i) {
+				return "Une description " + d.getId();
+			});
+
+		//narurals
+		naturals = _.where(attributes, 'natural').map(shape.createNatural);
+		svg.selectAll('.shape')
+			.data(naturals)
+			.enter()
+			.append("path")
+			.classed("natural", 1)
+			.attr("d", function(d, i) {
+					return d.toSVGPath();
+				   });
+
+		//amenities
+		amenities = _.where(attributes, 'amenity').map(shape.createAmenity);
+		svg.selectAll('.shape')
+			.data(amenities)
+			.enter()
+			.append("path")
+			.classed("amenity", 1)
+			.attr("d", function(d, i) {
+					return d.toSVGPath();
+				   });
+
+		//roads
+		roads = _.where(attributes, 'highway').map(shape.createRoad);
+		svg.selectAll('.shape')
+			.data(roads)
+			.enter()
+			.append("path")
+			.classed("highway", 1)
+			.attr("d", function(d, i) {
+					return d.toSVGPath();
+				   });
+
+	});
+//}
+
+
+//$(document).ready(drawCity);
+
+
+
+
+    </script>
+
+</body>
+</html>

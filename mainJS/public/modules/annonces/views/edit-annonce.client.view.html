@@ -1,0 +1,86 @@
+<center>
+	<section data-ng-controller="AnnoncesController" data-ng-init="findOne()">
+    <div class="page-header">
+        <h1 class="well" style=" <!--background: #E9B74A-->">Edit Annonce</h1>
+    </div>
+    <div class="col-md-12">
+        <form class="form-horizontal" data-ng-submit="update()" novalidate>
+            <fieldset>
+                    <div class="form-group">
+                    <label class="control-label" for="name" >Description</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                    	
+                        <input type="text" data-ng-model="annonce.name" id="name" class="form-control" placeholder="Description" required>
+                    </div>
+                </div>
+               
+                 <div class="form-group">
+                    <label class="control-label" for="adresse" >Adresse</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.adresse" id="adresse" class="form-control" placeholder="Adresse" required>
+                    </div>
+                </div>
+                
+                   <div class="form-group">
+                    <label class="control-label" for="codepostale">Code Postale</label>
+                   <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.codepostale" id="codepostale" class="form-control" placeholder="Code Postale" required>
+                    </div>
+                </div>
+                
+                                <div class="form-group">
+                    <label class="control-label" for="name" >Région</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.region" id="region" class="form-control" placeholder="Région" required>
+                    </div>
+                </div>
+                
+                
+                
+                   <div class="form-group">
+                    <label class="control-label" for="name">Ville</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.ville" id="ville" class="form-control" placeholder="Ville" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="type">Type</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.type" id="type" class="form-control" placeholder="Type" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="piece" >Piéce</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.piece" id="piece" class="form-control" placeholder="Piéce" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="prix">Prix</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="annonce.prix" id="prix" class="form-control" placeholder="Prix" required>
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label class="control-label" for="date">Date</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="date" data-ng-model="annonce.date" id="date" class="form-control" placeholder="JJ/MM/AAAA" required>
+                    </div>
+                </div>
+<br/><br />
+           
+            
+                
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-default">
+                </div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+            </fieldset>
+        </form>
+    </div>
+</section>
+</center>

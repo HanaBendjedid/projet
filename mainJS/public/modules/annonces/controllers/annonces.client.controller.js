@@ -1,0 +1,74 @@
+'use strict';
+
+// Annonces controller
+angular.module('annonces').controller('AnnoncesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Annonces',
+	function($scope, $stateParams, $location, Authentication, Annonces) {
+		$scope.authentication = Authentication;
+
+		// Create new Annonce
+		$scope.create = function() {
+			// Create new Annonce object
+			var annonce = new Annonces ({
+				name: this.name,
+                type: this.type,
+                ville: this.ville,
+                region: this.region,
+                prix: this.prix,
+                date: this.date,
+                codepostale: this.codepostale,
+                adresse: this.adresse,
+                piece: this.piece
+			});
+
+			// Redirect after save
+			annonce.$save(function(response) {
+				$location.path('annonces/' + response._id);
+
+				// Clear form fields
+				$scope.name = '';
+			}, function(errorResponse) {
+				$scope.error = errorResponse.data.message;
+			});
+		};
+
+		// Remove existing Annonce
+		$scope.remove = function(annonce) {
+			if ( annonce ) { 
+				annonce.$remove();
+
+				for (var i in $scope.annonces) {
+					if ($scope.annonces [i] === annonce) {
+						$scope.annonces.splice(i, 1);
+					}
+				}
+			} else {
+				$scope.annonce.$remove(function() {
+					$location.path('annonces');
+				});
+			}
+		};
+
+		// Update existing Annonce
+		$scope.update = function() {
+			var annonce = $scope.annonce;
+
+			annonce.$update(function() {
+				$location.path('annonces/' + annonce._id);
+			}, function(errorResponse) {
+				$scope.error = errorResponse.data.message;
+			});
+		};
+
+		// Find a list of Annonces
+		$scope.find = function() {
+			$scope.annonces = Annonces.query();
+		};
+
+		// Find existing Annonce
+		$scope.findOne = function() {
+			$scope.annonce = Annonces.get({ 
+				annonceId: $stateParams.annonceId
+			});
+		};
+	}
+]);

@@ -1,0 +1,9 @@
+{
+  "name": "tempwebapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0",
+    "lodash": "~2.4.1",
+    "d3": "~3.4.13"
+  }
+}

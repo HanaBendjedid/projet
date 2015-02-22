@@ -1,0 +1,99 @@
+<center><section data-ng-controller="AnnoncesController">
+    <div class="page-header">
+        <h1 class="well" style=" <!--background: #E9B74A-->">New Annonce</h1>
+    </div>
+    <div class="col-md-12">
+        <form class="form-horizontal" id="annonc" name="annoncForm" data-ng-submit="create()" novalidate>
+            <fieldset>
+            	
+                <div class="form-group">
+                    <label class="control-label" for="name" >Description</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="name" id="name" class="form-control" placeholder="Description" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="control-label" for="adresse" >Adresse</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="adresse" id="adresse" class="form-control" placeholder="Adresse" required>
+                    </div>
+                </div>
+                
+                   <div class="form-group">
+                    <label class="control-label" for="codepostale">Code Postale</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="number" data-ng-model="codepostale" id="codepostale" class="form-control" placeholder="Code Postale" required>
+                    </div>
+                </div>
+                
+                                <div class="form-group">
+                    <label class="control-label" for="region" >Région</label>
+                   <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="region" id="region" class="form-control" placeholder="Région" required>
+                    </div>
+                </div>
+                
+                
+                   <div class="form-group">
+                    <label class="control-label" for="name">Ville</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="ville" id="ville" class="form-control" placeholder="Ville" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="type">Type</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="text" data-ng-model="type" id="type" class="form-control" placeholder="Type" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="piece" >Piéce</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="number" data-ng-model="piece" id="piece" class="form-control" placeholder="Piéce" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="prix">Prix</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="number" data-ng-model="prix" id="prix" class="form-control" placeholder="Prix" required>
+                    </div>
+                </div>
+               <div class="form-group">
+                    <label class="control-label" for="date">Date</label>
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                        <input type="date" data-ng-model="date" id="date" class="form-control" placeholder="JJ/MM/AAAA" required>
+                    </div>
+                </div>
+<br/><br />
+    <div class="form-group">                
+                    <div class="well"  style="width: 300px; <!--background: #C8998D-->">
+                    	<input type="file" id="fileChooser" />
+                        <input type="hidden" data-ng-model="id_building" id="fileChooserText" class="form-control" placeholder="Choisir Image" required>
+                        <input type="hidden" data-ng-model="id_building" id="id_building" class="form-control" value="">
+                    </div>
+                </div>
+                
+
+
+	
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default">
+                    <input type="reset" class="btn btn-default">
+                </div>
+				<div data-ng-show="error" class="text-danger">
+					<strong data-ng-bind="error"></strong>
+				</div>
+				<br/><br />
+			
+	    	<center><div class="form-group" >
+		  	  <directiveannonce></directiveannonce>
+  		   </div></center>
+            </fieldset>
+        </form>
+    </div>
+</section>
+</center>

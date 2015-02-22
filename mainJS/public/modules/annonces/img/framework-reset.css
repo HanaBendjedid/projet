@@ -1,0 +1,636 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body { margin-bottom: 0px;}
+ul, ol {padding-left: 0px;}
+ul li a {font-size: 1em; line-height: inherit;}
+.component-content ul li, .component-content ol li {line-height:inherit;}
+
+.component-content ol, ol,
+.component-content ul, ul {
+    list-style-position: inside;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*Members Login Popup*/
+#rt-popup {display: none;}
+
+div.k2LoginBlock fieldset.input p{padding:0;}
+
+
+/*----------------------------------Mainbody------------------------------------------*/
+
+div.itemIsFeatured, div.catItemIsFeatured, div.userItemIsFeatured { background: none;}
+
+/*Lists*/
+.even, .odd{background: none; border-bottom: none; padding: 0px;}
+
+
+/*---------------Category Listing-------------------*/
+
+div.catItemBody {margin: 0; padding: 0;}
+
+div.itemListCategory {
+    background: none;
+    border: none;
+    margin: 0 0 10px;
+    padding: 0px;
+}
+
+div.catItemView {padding: 0px;}
+
+div.catItemCategory {
+    border-bottom: none;
+    padding: 0px;
+}
+
+div.catItemCommentsLink,div.itemCommentsLink {
+    border-right: none;
+    display: inline;
+    margin: 0;
+    padding: 0 0 0 20px;
+	font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:url(../images/comments.png) 0 2px no-repeat;
+}
+
+div.catItemHitsBlock {
+    border-bottom: none;
+    padding: 0px;
+}
+
+div.catItemCategory span {color:inherit;}
+
+
+div.catItemIntroText {
+    font-size: inherit;
+    font-weight: normal;
+    line-height: inherit;
+    padding: 0px;
+	margin: 0 1em 0 0;
+}
+
+div.catItemTagsBlock {
+    border-bottom: none;
+    padding: 0px;
+}
+
+div.catItemLinks {margin: 0; padding: 0;}
+
+div.catItemHeader span.catItemDateCreated,div.itemHeader span.itemDateCreated {
+	background:url(../images/date.png) 0 2px no-repeat;
+	padding:0 0 0 20px;
+	display:inline;
+	font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0 10px 0 0;
+}
+
+div.catItemHeader span.catItemAuthor,div.itemHeader span.itemAuthor{background:url(../images/author.png) 0 2px no-repeat;display:inline;padding:0 0 0 20px;
+	font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0 10px 0 0;}
+div.catItemHeader span.catItemAuthor a,div.itemHeader span.itemAuthor a{color:inherit;}
+
+div.userItemReadMore,
+div.catItemReadMore,
+div.genericItemReadMore{
+	display:inline-block;}
+div.userItemReadMore{display:block;margin-top:10px;}
+
+/*Edit Button*/
+
+span.catItemEditLink a,
+span.catItemEditLink a:hover,
+span.itemEditLink a,
+span.itemEditLink a:hover,
+span.userItemEditLink a,
+span.userItemEditLink a:hover {
+    background: none;
+    border:none;
+	padding:0;
+}
+
+span.catItemEditLink,
+span.itemEditLink,
+span.userItemEditLink {
+    padding:0 1em 0 0;
+    text-align: right;
+    width:auto;
+}
+
+/*Frontend Editing*/
+
+div#k2Frontend table.k2FrontendToolbar td.button{
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 4px 8px;}
+	
+a#k2ToggleSidebar,
+a#k2ToggleSidebar:hover,
+div#k2Frontend table.k2FrontendToolbar td.button a,
+div#k2Frontend table.k2FrontendToolbar td.button a:hover{color:#000;}
+
+table.admintable input{
+	background:none !important;
+	width:200px;}
+	
+div#k2Frontend h3, div#k2Frontend legend {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    letter-spacing: normal;
+}
+
+
+
+/*---Category listing images---*/
+
+span.catItemImage img {border: none; padding: 0px;}
+div.catItemImageBlock {margin: 0 20px 26px 0; padding: 0px;float:left;border:1px solid #fff;box-shadow:1px 1px 2px rgba(0,0,0,.09);}
+span.catItemImage {display: block; margin: 0; text-align: left;}
+span.catItemImage a{display:block;}
+
+/*---------------------------Generic View (Archives, Search)----------------------------*/
+
+div.genericItemBody {margin: 0; padding: 0;}
+div.genericItemIntroText {font-size: inherit;  font-weight: inherit; line-height: inherit; padding: 0; overflow: hidden;}
+div.genericItemImageBlock{margin:0 20px 0 0;border:1px solid #fff;box-shadow:1px 1px 2px rgba(0,0,0,.09);}
+span.genericItemImage{margin:0;}
+span.genericItemImage a{display:inline-block;}
+span.genericItemImage img {border: none; padding: 0px; margin:0;}
+
+/*--------------------------------------Author Page-------------------------------------*/
+div.userItemBody {margin: 0; padding: 0;}
+div.userItemImageBlock{margin:0 20px 0 0;border:1px solid #fff;box-shadow:1px 1px 2px rgba(0,0,0,.09);}
+span.userItemImage{margin:0;}
+span.userItemImage a{display:block;}
+span.userItemImage img {border: none; padding: 0px; margin:0;}
+div.userItemIntroText {font-size: inherit;  font-weight: inherit; line-height: inherit; padding: 0; overflow: hidden;}
+
+/*------------------------------------------Item View---------------------------------*/
+
+div.itemToolbar {
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    margin: 16px 0 0;
+    padding: 0;
+}
+
+div.itemToolbar ul li a#fontDecrease:hover,
+div.itemToolbar ul li a#fontIncrease:hover {text-decoration:none;}
+
+div.itemNavigation {
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+div.itemIntroText {
+    color: inherit;
+    font-size: 1em;
+    font-weight: normal;
+    line-height:inherit;
+    padding:0;
+}
+
+div.itemContentFooter {
+    border-top: none;
+    color: inherit;
+    display: block;
+    margin: 16px 0 4px;
+    padding: 0px;
+    text-align: right;
+}
+
+div.itemCategory {border-bottom:none; padding: 0px;}
+div.itemImageBlock {margin: 0 0 30px 0; padding: 0;}
+span.itemImage {display:inline-block; margin: 0; text-align: left;border:1px solid #fff;box-shadow:1px 1px 2px rgba(0,0,0,.09);}
+span.itemImage a{display:inline-block;}
+span.itemImage img {border: none; padding: 0px;}
+div.itemBackToTop {text-align: right; display:none;}
+div.itemView {border-bottom: none;}
+div.itemBody {margin: 0; padding: 0;}
+
+
+/*AddThis Social Buttons*/
+
+div.social-button{
+    overflow: hidden;
+    padding: 1em 0 3em;}
+	
+
+div.social-button span.label{
+    display: block;
+    float: left;
+    line-height: 32px;
+    padding-right: 10px;
+	}
+	
+div.social-button div.addthis_toolbox{
+	float:left;}
+	
+.at300bs:hover{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(opacity=80) !important;}
+
+div.addthis_toolbox a{float:left; display:block;}
+
+
+
+/*---Rating---*/
+
+div.catItemRatingBlock,
+div.itemRatingBlock {padding: 0; float:right;}
+
+div.catItemRatingBlock span{color:inherit;}
+
+div.catItemRatingBlock span,
+div.itemRatingBlock span {
+    display: block;
+    float: left;
+    font-style: normal;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+
+
+.itemRatingList, .itemRatingList a:hover, .itemRatingList .itemCurrentRating {
+    background: url("../images/system/transparent_star.png") repeat-x scroll transparent;}
+
+.itemRatingList{background-position: left top;}
+.itemRatingList a:hover {background-position: left -25px;}
+.itemRatingList .itemCurrentRating{background-position: left -25px;}
+
+div.itemRatingBlock span {
+    color:inherit;
+    display: block;
+    float: left;
+    font-style: normal;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 4px 0 0;
+}
+
+.component-content ul.itemRatingList {
+    background-position: left top;
+    float: left;
+    height: 25px;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 105px;
+}
+
+.itemRatingLog {
+    float: left;
+    font-size: 11px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+
+/*----------------Rockbox----------*/
+
+#sbox-overlay, #rokbox-overlay{z-index:655500 !important;left:0 !important;}
+#sbox-window, #rokbox-wrapper{z-index:655502 !important;}
+
+/*----------------Comments-------------*/
+
+div.itemCommentsForm p.itemCommentsFormNotes {border-top: none;}
+
+div.itemAuthorBlock {
+    background: none;
+    border: none;
+    margin: 0 0 16px;
+    padding: 0px;
+}
+
+div.itemComments {
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+div.itemAuthorBlock div.itemAuthorDetails {margin: 0; padding: 0;}
+
+.extra_wrap{overflow:hidden;}
+
+div.itemComments ul.itemCommentsList li span.commentDate {
+    border-right: none;
+    font-weight: normal;
+    margin: 0 0 10px;
+    padding: 0 0 0 20px; font-size:12px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:url(../images/date.png) 0 4px no-repeat;
+	color:#b9b9b9;
+	display:block;
+}
+
+div.itemComments ul.itemCommentsList li span.commentAuthorName{float:left;clear:left;font-size:12px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;color:#b9b9b9;font-weight:normal;width:60px;margin-right:19px;}
+div.itemComments ul.itemCommentsList li span.commentAuthorName a{color:inherit;}
+div.itemComments ul.itemCommentsList li span.commentAuthorName a:hover{color:#000;}
+
+div.itemComments ul.itemCommentsList li span.commentLink{float:none;margin:0;}
+
+div.itemComments ul.itemCommentsList li span.commentLink a,
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover{font-size:13px;	color:#ff8b18;text-decoration:none;font-weight:bold;padding:0 19px 0 0;background:url(../images/more_arrow.gif) 100% 6px no-repeat;margin-right:15px;}
+	
+div.itemComments ul.itemCommentsList li span.commentLink a:hover,
+div.itemComments ul.itemCommentsList li span.commentToolbar a:hover{color:#292427;background:url(../images/more_arrow.gif) 100% -11px no-repeat;}
+
+div.itemComments ul.itemCommentsList li img {
+    background: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    float: left;
+    padding: 0px;
+}
+
+div.itemComments ul.itemCommentsList li p{padding:0;}
+div.itemComments ul.itemCommentsList li {border-bottom: none;}
+
+div.itemCommentsForm form label.formName,
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formUrl,
+div.itemCommentsForm form label.formComment,
+div.itemCommentsForm form input#submitCommentButton {display: block;}
+
+div.itemCommentsForm form label.formEmail,
+div.itemCommentsForm form label.formUrl,
+div.itemCommentsForm form label.formName {
+    margin: 0;
+	float:left;width:102px;
+	line-height:30px;
+}
+
+
+/*Loading*/
+div.itemCommentsForm form {	position:relative;}
+
+div.itemCommentsForm form span#formLog {
+    bottom: -55px;
+    display: block;
+    left: 100px;
+	padding:0;
+    line-height: 1.8em;
+    margin: 0;
+    position:absolute;
+}
+
+div.itemCommentsForm form .formLogLoading {
+    background: url("../images/system/loading.gif") no-repeat scroll left center transparent;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+
+	
+/*Report Comment*/
+
+div.k2ReportCommentFormContainer {
+    margin: 0;
+    padding: 8px;
+    width: 480px;
+}
+
+/*---------------------------------------User Login page----------------------------*/
+
+div.component-content > div.login div.login-fields{margin-bottom:1em;}
+div.component-content > div.login div.login-fields label{
+	display:block;
+	float:left;
+	width:10em;}
+	
+input[type="checkbox"]{
+	background:none !important;
+	border:none !important;
+	position:relative;
+	top:2px;}
+	
+input[type="radio"]{
+	position:relative;
+	top:1px;}
+
+
+/*----------------------------------------Contact Form------------------------------*/
+
+.component-content form fieldset dt {
+    clear: left;
+    float: left;
+    padding: 0;
+    width: 150px;
+}
+
+.component-content form fieldset dd {
+    float: left;
+    padding: 0;
+	margin-bottom:1em;
+	width:252px;
+}
+
+.component-content .contact .button { margin: 0;}
+
+input.invalid,
+textarea.invalid{
+	border:1px solid #F00 !important;
+	box-shadow:none;}
+	
+#jform_contact_email_copy{    
+	display: inline;
+    height: auto;
+    left: 0;
+    margin: 0;
+    position: relative;
+    top: 4px;
+    width: auto;}
+
+
+/*-----------------------------------------Create Account------------------------------*/
+
+
+form dd,
+form dt{
+	margin:0 0 1em 0;}
+	
+input{box-shadow:none !important;}
+	
+div.toggle-editor {margin-bottom: 8px; overflow: hidden; padding: 5px 0;}	
+.component-content div.toggle-editor a{font-weight:normal;}
+
+.k2AccountPage dl{clear:both; overflow:hidden; margin-bottom:2em;}
+.k2AccountPage dt {clear: left; float: left; padding: 0; width: 180px; display:block; }
+.k2AccountPage dd { float: left; padding: 0;}
+.k2AccountPage dd.gender{padding:0.4em 0 0 0;}
+#josForm .k2AccountPage dd input{margin:0;}
+.k2AccountPage div.k2AccountPageUpdate {
+    border-top:none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+span#description_parent{
+	width:90% !important;
+	height:272px !important;}
+	
+a#description_resize{
+display:none;}
+	
+label#genderm-lbl{margin-right:1em;}
+dd.editor{float:none; width:95%; clear:both;}
+textarea#description{resize:none; overflow:auto;}
+
+img.calendar{display:none;}
+	
+
+#jform_profile_tos label{padding-left:4px;}
+
+legend{color:inherit}
+
+select{padding:4px;}
+
+/*---------------------------------Reset & Remind--------------------------*/
+
+.component-content .reset,
+.component-content .remind,
+div.component-content > div.login{
+	padding: 2em 0;}
+	
+/*---------------------------------Frontend Editing----------------------------*/
+
+table.adminFormK2 tr td.adminK2LeftCol { text-align: left;}
+
+input.text_area.k2TitleBox,
+input.text_area.k2TitleAliasBox,
+select#catid{ margin: 5px 0;}
+table.adminFormK2 tr td.adminK2LeftCol{background:none;}
+
+div.k2ItemFormEditor div.toggle-editor{ margin: 0; overflow: visible; padding: 0;}
+
+#editor-xtd-buttons {margin-top: 0; padding: 0 5px;}
+	
+/*-----------------------------------Search Results------------------------------*/
+
+div.form-limit-and-counter{
+	padding:1em;
+	margin:1em 0;
+	overflow:hidden;}
+
+.component-content .form-limit,
+.component-content p.counter {
+	display:block;
+	padding:0;
+	margin:0;}
+	
+.component-content .form-limit{float:right;}
+.component-content p.counter{float:left;}
+
+.component-content dl.search-results dd.result-created,
+.component-content dl.search-results dd.result-category{
+	display:inline;
+	padding:0;}
+
+
+
+/*----------------------------------Sidebars------------------------------------------*/
+
+#rt-sidebar-a,
+#rt-sidebar-b,
+#rt-sidebar-c {
+    background: none;
+}
+
+	
+/*----------------------------------Modules------------------------------------------*/
+
+.rt-block {
+    margin-bottom: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+div.k2ItemsBlock > ul > li{list-style:none;}
+
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext {
+    line-height:inherit;
+    padding: 0;
+}
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage{display:inline-block;border:1px solid #fff;box-shadow:1px 1px 2px rgba(0,0,0,.09);margin:0 0 25px;}
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+    border: none;
+    padding: 0;
+    margin:0;
+	float:none;
+}
+
+#form-login ul,
+div.k2LatestCommentsBlock ul li,
+div.k2CategoriesListBlock ul li,
+div.k2ArchivesBlock ul li,
+#k2Container .k2Pagination ul li, 
+div.pagination ul li{list-style:none;}
+
+/*User Login*/
+
+#form-login #modlgn_remember{    
+	display: inline;
+    height: auto;
+    left: 1em;
+    margin: 0;
+    position: relative;
+    top: 2px;
+    width: auto;}
+
+.k2Avatar img {
+    background: none;
+    border: none;
+    display: block;
+    float: left;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0px;
+}
+
+div.k2UserBlock ul.k2UserBlockActions {	list-style:none;}
+
+/*Last Comments Module*/
+
+div.k2LatestCommentsBlock ul li {margin: 0 0 1em;}
+div.k2LatestCommentsBlock ul li a.k2Avatar{display: block; float: left;}
+div.k2LatestCommentsBlock ul li a.k2Avatar img {
+    background: none;
+    border: none;
+    margin: 0 1em 1em 0;
+    padding: 0px;
+}
+div.k2LatestCommentsBlock ul li span.lcUsername,
+div.k2LatestCommentsBlock ul li span.lcCommentDate {display:block;}
+div.k2LatestCommentsBlock ul li span.lcComment {clear: both; display: block;}
+
+
+/*Social Media links*/
+
+.smilecredits{display:none;}
+
+/*Search*/
+
+/*IE Warning*/
+
+#rt-iewarn {background:url(../images/system/ie-warn-bg.jpg) top left repeat-x;}
+#rt-iewarn .rt-container{background:none;}
+div.k2ItemsBlock>ul{list-style:none;margin:0;}
+.tip-wrap{width:auto !important;max-width:500px !important;}
+
+.pagination-results{display:none;}
+table.adminlist td, table.adminlist th{padding:0px !important;}
